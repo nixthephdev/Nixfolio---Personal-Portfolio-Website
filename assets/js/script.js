@@ -305,4 +305,86 @@
         
     });
 
+    // Snow Effect Initialization
+    (function() {
+        const canvas = document.getElementById('snow-canvas');
+        if (!canvas) {
+            console.error('Canvas element not found!');
+            return;
+        }
+        const ctx = canvas.getContext('2d');
+
+        let snowflakes = [];
+        const flakesCount = 100; // Number of snowflakes
+
+        // Set canvas size to window size
+        function setCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        setCanvasSize();
+
+        // Snowflake constructor
+        function Snowflake(x, y, r, d) {
+            this.x = x;     // X-coordinate
+            this.y = y;     // Y-coordinate
+            this.r = r;     // Radius
+            this.d = d;     // Density
+        }
+
+        // Update snowflake position
+        Snowflake.prototype.update = function() {
+            this.y += Math.pow(this.d, 2) + 1;
+            this.x += Math.sin(this.y * 0.01);
+
+            // Reset snowflake to top if it goes below the canvas
+            if (this.y > canvas.height) {
+                this.y = 0;
+                this.x = Math.random() * canvas.width;
+            }
+        };
+
+        // Draw snowflake
+        Snowflake.prototype.draw = function() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+        };
+
+        // Initialize snowflakes
+        function init() {
+            snowflakes = [];
+            for (let i = 0; i < flakesCount; i++) {
+                let x = Math.random() * canvas.width;
+                let y = Math.random() * canvas.height;
+                let r = Math.random() * 3 + 1; // Radius between 1 and 4
+                let d = Math.random() * 2 + 1; // Density between 1 and 3
+
+                snowflakes.push(new Snowflake(x, y, r, d));
+            }
+        }
+
+        // Animate snowflakes
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let flake of snowflakes) {
+                flake.update();
+                flake.draw();
+            }
+            requestAnimationFrame(animate);
+        }
+
+        // Handle window resizing
+        window.addEventListener('resize', function() {
+            setCanvasSize();
+            init();
+        });
+
+        // Initialize and start animation
+        init();
+        animate();
+
+    })();
+
 })(window.jQuery);
