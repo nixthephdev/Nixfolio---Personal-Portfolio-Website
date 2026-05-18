@@ -1,0 +1,14 @@
+# Old template folder and zip
+Nixfolio/
+Nixfolio.zip
+assets/images.zip
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Newsletter data (sensitive)
+assets/data/newsletter_subscriptions.txt
