@@ -63,6 +63,58 @@
       },
       "knowsAbout": ["Laravel", "Livewire", "Alpine.js", "Tailwind CSS", "PHP", "MySQL", "ERP Systems", "Payment Gateway Integration", "CI/CD", "AWS", "Azure"],
       "award": ["Best Programmer of the Class 2024 — ACLC College Sorsogon", "Best Capstone Project 2024 — ACLC College Sorsogon"],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "The Full Stack Web Development Bootcamp (Frontend & Backend)",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Udemy" },
+          "url": "https://ude.my/UC-e5826b23-cb33-4f1d-8afb-462a556279f1",
+          "dateCreated": "2023-12-05"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "PHP Laravel: Build Amazing Streaming Service",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Udemy" },
+          "url": "https://ude.my/UC-ea5a0db9-01dc-4de3-84fc-75f3f8a797a4"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "JavaScript Fundamentals to Advanced: Full Stack Development",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Udemy" },
+          "url": "https://ude.my/UC-e7a454ce-82c5-4518-9c79-c502ecc01777"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Learn PHP and MySQL for Web Application and Web Development",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Udemy" },
+          "url": "https://ude.my/UC-2938ea9e-9216-4324-a1a0-1c0e1af9acff"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "HTML, JavaScript, & Bootstrap - Certification Course",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Udemy" },
+          "url": "https://ude.my/UC-3e30b47d-f711-481b-a2c8-8c82bea05b0b"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft Office and Google Workspace Masterclass",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Udemy" },
+          "url": "https://ude.my/UC-f531ae1d-378b-4d4f-b34d-47e116e73097"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Best Practice for Security on the Cloud",
+          "credentialCategory": "Certificate of Completion",
+          "recognizedBy": { "@type": "Organization", "name": "Alibaba Cloud Academy" },
+          "dateCreated": "2024-01-17"
+        }
+      ],
       "sameAs": [
         "https://github.com/nixthephdev",
         "https://www.linkedin.com/in/nikko-calumpiano-94a378250/",
@@ -74,6 +126,20 @@
 
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="dnlDxbhjdf6AR2G0pbCnzjPbAcVury0iSv-YFqtGXS8">
+
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- Google Fonts (non-blocking, replaces @import in style.css) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&family=Orbitron:wght@700&display=swap">
+
+    <!-- Preload LCP image (responsive: mobile gets 540px version, desktop gets full) -->
+    <link rel="preload" as="image" fetchpriority="high"
+          href="assets/images/hero/me_casual.webp"
+          imagesrcset="assets/images/hero/me_casual_mobile.webp 540w, assets/images/hero/me_casual.webp 1081w"
+          imagesizes="(max-width: 768px) 100vw, 575px">
 
     <!-- Google Analytics GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PQ74DNRFG"></script>
@@ -87,23 +153,40 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-    <!-- Flaticon -->
-    <link rel="stylesheet" href="assets/css/flaticon.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <!-- Nice Select -->
-    <link rel="stylesheet" href="assets/css/nice-select.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- Slick -->
-    <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Non-critical CSS deferred (loads async, no render-blocking) -->
+    <link rel="stylesheet" href="assets/css/flaticon.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/slick.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/flaticon.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+        <link rel="stylesheet" href="assets/css/nice-select.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+    </noscript>
+
+    <style>
+        @keyframes hire-pulse {
+            0%   { box-shadow: 0 0 0 0 rgba(255,255,255,0.55), 0 0 18px 4px rgba(255,255,255,0.18); transform: scale(1); }
+            50%  { box-shadow: 0 0 0 10px rgba(255,255,255,0), 0 0 30px 8px rgba(255,255,255,0.28); transform: scale(1.045); }
+            100% { box-shadow: 0 0 0 0 rgba(255,255,255,0), 0 0 18px 4px rgba(255,255,255,0.18); transform: scale(1); }
+        }
+        .hire-me-btn {
+            animation: hire-pulse 1.8s ease-in-out infinite;
+            position: relative;
+        }
+        .hire-me-btn:hover {
+            animation: none;
+            transform: scale(1.06);
+        }
+    </style>
 </head>
 
 <body class="home-one">
@@ -148,7 +231,7 @@
 
                                     <!-- Toggle Button -->
                                     <button type="button" class="navbar-toggle me-4" data-bs-toggle="collapse"
-                                        data-bs-target=".navbar-collapse">
+                                        data-bs-target=".navbar-collapse" aria-label="Toggle navigation" aria-expanded="false">
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
@@ -176,8 +259,8 @@
                         <div class="menu-btns">
                             <!-- menu sidbar -->
                             <div class="menu-sidebar">
-                                <button>
-                                    <img src="assets/images/shape/sidebar-tottler.svg" alt="Toggler">
+                                <button aria-label="Open contact sidebar">
+                                    <img src="assets/images/shape/sidebar-tottler.svg" alt="" aria-hidden="true">
                                 </button>
                             </div>
                         </div>
@@ -194,7 +277,7 @@
         <!-- Hidden Sidebar -->
         <section class="hidden-bar">
             <div class="inner-box text-center">
-                <div class="cross-icon"><span class="fa fa-times"></span></div>
+                <div class="cross-icon"><button class="cross-btn" aria-label="Close sidebar"><span class="fa fa-times" aria-hidden="true"></span></button></div>
                 <div class="title">
                     <h4>Get In Touch</h4>
                 </div>
@@ -220,12 +303,12 @@
 
                 <!--Social Icons-->
                 <div class="social-style-one">
-                    <a href="https://www.linkedin.com/in/nikko-calumpiano-94a378250/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/nixthephdev" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://m.me/neekoxyz" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
-                    <a href="https://www.instagram.com/neekoxyz" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://web.telegram.org/k/#@Nixlopez" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="viber://chat?number=%2B639319914266" target="_blank"><i class="fab fa-viber"></i></a>
+                    <a href="https://www.linkedin.com/in/nikko-calumpiano-94a378250/" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/nixthephdev" target="_blank" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://m.me/neekoxyz" target="_blank" aria-label="Facebook Messenger"><i class="fab fa-facebook-messenger" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/neekoxyz" target="_blank" aria-label="Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://web.telegram.org/k/#@Nixlopez" target="_blank" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+                    <a href="viber://chat?number=%2B639319914266" target="_blank" aria-label="Viber"><i class="fab fa-viber" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
@@ -243,10 +326,8 @@
                                 Livewire, Laravel). Expert in architecting enterprise-grade ERP systems, secure payment
                                 integrations, and CI/CD pipelines — built and deployed end-to-end as a solo developer.</p>
                             <div class="hero-btns">
-                                <a href="#contact" class="theme-btn scroll-to-target">Hire Me <i
-                                                class="far fa-angle-right"></i></a>
-                                <a href="assets/files/resume.pdf" download class="read-more">Download Resume <i
-                                                class="far fa-angle-right"></i></a>
+                                <a href="#contact" class="theme-btn scroll-to-target hire-me-btn">Hire Me <i class="far fa-angle-right" aria-hidden="true"></i></a>
+                                <a href="assets/files/resume.pdf" download class="read-more">Download Resume <i class="fas fa-download" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -269,7 +350,12 @@
                     <div class="col-lg-5">
                         <div class="author-image-part wow fadeIn delay-0-3s">
                             <div class="bg-circle"></div>
-                            <img src="assets/images/hero/me_casual.jpg" alt="Nikko Calumpiano - Best Full Stack Software Engineer in Sorsogon Philippines">
+                            <img src="assets/images/hero/me_casual.webp"
+                                 srcset="assets/images/hero/me_casual_mobile.webp 540w, assets/images/hero/me_casual.webp 1081w"
+                                 sizes="(max-width: 768px) 100vw, 575px"
+                                 alt="Nikko Calumpiano - Best Full Stack Software Engineer in Sorsogon Philippines"
+                                 fetchpriority="high" width="1081" height="1669"
+                                 style="max-height: 800px; object-fit: cover; object-position: top center;">
                             <div class="progress-shape">
                                 <img src="assets/images/hero/progress-shape.png" alt="Progress">
                             </div>
@@ -329,14 +415,14 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="about-image-part wow fadeInUp delay-0-3s">
-                                <img src="assets/images/hero/me6.jpeg" alt="Nikko Calumpiano - Full Stack Software Developer and Web Developer from Sorsogon Philippines" style="border-radius: 0;">
+                                <img src="assets/images/hero/me6.webp" alt="Nikko Calumpiano - Full Stack Software Developer and Web Developer from Sorsogon Philippines" style="border-radius: 0;" loading="lazy">
                                 <div class="about-btn btn-one wow fadeInRight delay-0-4s">
-                                    <img src="assets/images/about/btn-image1.png" alt="Image">
+                                    <img src="assets/images/about/btn-image1.png" alt="Image" loading="lazy">
                                     <h6>Experienced Developer</h6>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                                 <div class="about-btn btn-two wow fadeInRight delay-0-5s">
-                                    <img src="assets/images/hero/me3.jpg" alt="Nikko Calumpiano - TALL Stack Web Developer Philippines">
+                                    <img src="assets/images/hero/me3.webp" alt="Nikko Calumpiano - TALL Stack Web Developer Philippines" loading="lazy">
                                     <h6>Nikko Calumpiano</h6>
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
@@ -446,7 +532,7 @@
                             <h4>ERP System Development</h4>
                             <p>End-to-end enterprise resource planning systems built with the TALL stack — covering finance, HR, admissions, grading, and inventory.</p>
                         </div>
-                        <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="details-btn" aria-label="Inquire about ERP System Development"><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -456,7 +542,7 @@
                             <h4>Payment Gateway Integration</h4>
                             <p>Secure bank-grade payment integrations (PNB and similar providers) for automated tuition collection and institutional cash flow.</p>
                         </div>
-                        <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="details-btn" aria-label="Inquire about Payment Gateway Integration"><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -466,7 +552,7 @@
                             <h4>Full Stack Web Development (TALL Stack)</h4>
                             <p>Responsive, high-performance web applications using Tailwind CSS, Alpine.js, Livewire, and Laravel with RESTful API design.</p>
                         </div>
-                        <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="details-btn" aria-label="Inquire about Full Stack Web Development"><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -476,7 +562,7 @@
                             <h4>Automated HR & Payroll Systems</h4>
                             <p>Attendance-linked payroll automation with dynamic tax calculations and mandatory government deductions (SSS, PhilHealth, Pag-IBIG).</p>
                         </div>
-                        <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="details-btn" aria-label="Inquire about HR & Payroll Systems"><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -486,7 +572,7 @@
                             <h4>Cloud Deployment & Server Configuration</h4>
                             <p>CI/CD pipeline setup and cloud deployments on AWS, Azure, and shared hosting platforms including Namecheap, GoDaddy, and Hostinger.</p>
                         </div>
-                        <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="details-btn" aria-label="Inquire about Cloud Deployment"><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -496,7 +582,7 @@
                             <h4>Database Design & Optimization</h4>
                             <p>Complex relational database architecture in MySQL with multi-table query optimization for high-traffic production environments.</p>
                         </div>
-                        <a href="#contact" class="details-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="details-btn" aria-label="Inquire about Database Design"><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -534,7 +620,7 @@
                             <div class="row">
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-2s">
-                                        <img src="assets/images/skills/tailwindcss_.png" alt="Tailwind CSS">
+                                        <img src="assets/images/skills/tailwindcss_.png" alt="Tailwind CSS" loading="lazy">
                                         <h5>Tailwind CSS</h5>
                                         <span class="percent">90%</span>
                                         <i class="fab fa-css3-alt"></i>
@@ -542,7 +628,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-3s">
-                                        <img src="assets/images/skills/alpinejs_.png" alt="Alpine.js">
+                                        <img src="assets/images/skills/alpinejs_.png" alt="Alpine.js" loading="lazy">
                                         <h5>Alpine.js</h5>
                                         <span class="percent">85%</span>
                                         <i class="fab fa-js-square"></i>
@@ -550,7 +636,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-4s">
-                                        <img src="assets/images/skills/livewire.png" alt="Livewire">
+                                        <img src="assets/images/skills/livewire.png" alt="Livewire" loading="lazy">
                                         <h5>Livewire</h5>
                                         <span class="percent">88%</span>
                                         <i class="fas fa-bolt"></i>
@@ -558,7 +644,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="assets/images/skills/laravel.png" alt="Laravel">
+                                        <img src="assets/images/skills/laravel.png" alt="Laravel" loading="lazy">
                                         <h5>Laravel</h5>
                                         <span class="percent">92%</span>
                                         <i class="fab fa-laravel"></i>
@@ -603,7 +689,7 @@
                             <div class="row">
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-2s">
-                                        <img src="assets/images/skills/php.png" alt="PHP">
+                                        <img src="assets/images/skills/php.png" alt="PHP" loading="lazy">
                                         <h5>PHP</h5>
                                         <span class="percent">92%</span>
                                         <i class="fab fa-php"></i>
@@ -611,7 +697,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-3s">
-                                        <img src="assets/images/skills/mysql.png" alt="MySQL">
+                                        <img src="assets/images/skills/mysql.png" alt="MySQL" loading="lazy">
                                         <h5>MySQL</h5>
                                         <span class="percent">88%</span>
                                         <i class="fas fa-database"></i>
@@ -619,7 +705,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-4s">
-                                        <img src="assets/images/skills/git_.png" alt="Git & CI/CD">
+                                        <img src="assets/images/skills/git_.png" alt="Git & CI/CD" loading="lazy">
                                         <h5>Git & CI/CD</h5>
                                         <span class="percent">85%</span>
                                         <i class="fab fa-git-alt"></i>
@@ -627,7 +713,7 @@
                                 </div>
                                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                     <div class="skill-item wow fadeInUp delay-0-5s">
-                                        <img src="assets/images/skills/node-js.png" alt="Node.js">
+                                        <img src="assets/images/skills/node-js.png" alt="Node.js" loading="lazy">
                                         <h5>Node.js</h5>
                                         <span class="percent">80%</span>
                                         <i class="fab fa-node-js"></i>
@@ -664,7 +750,7 @@
             <div class="row align-items-center pb-25">
                 <div class="col-lg-6">
                     <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="assets/images/projects/LOGO-with white shadow.png" alt="Project">
+                        <img src="assets/images/projects/LOGO-with white shadow.webp" alt="Project" loading="lazy">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6">
@@ -672,14 +758,14 @@
                         <span class="sub-title">Web Development</span>
                         <h2><a href="https://pcis.edu.ph">Philippine Cambridge International School Website</a></h2>
                         <p>Developed a comprehensive website for the Philippine Cambridge International School.</p>
-                        <a href="https://pcis.edu.ph" class="details-btn"><i class="far fa-arrow-right"></i></a>
+                        <a href="https://pcis.edu.ph" class="details-btn" aria-label="View Philippine Cambridge International School Website"><i class="far fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center pb-25">
                 <div class="col-lg-6 order-lg-2">
                     <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="assets/images/projects/M7 TECH LOGO-02.png" alt="Project">
+                        <img src="assets/images/projects/M7 TECH LOGO-02.webp" alt="Project" loading="lazy">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 ms-auto">
@@ -687,15 +773,14 @@
                         <span class="sub-title">Web Development</span>
                         <h2><a href="https://m7techsolutions.com/">M7 IT Solutions Company Website</a></h2>
                         <p>Created a dynamic and user-friendly website for M7 IT Solutions Company.</p>
-                        <a href="https://m7techsolutions.com/" class="details-btn"><i
-                                class="far fa-arrow-right"></i></a>
+                        <a href="https://m7techsolutions.com/" class="details-btn" aria-label="View M7 IT Solutions Company Website"><i class="far fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center pb-25">
                 <div class="col-lg-6">
                     <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="assets/images/projects/SLWI.png" alt="Project">
+                        <img src="assets/images/projects/SLWI.webp" alt="Project" loading="lazy">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6">
@@ -704,14 +789,14 @@
                         <h2><a href="#portfolio">St. Lawrence Water Works Incorporation Billing System</a></h2>
                         <p>Developed a comprehensive water billing system with SMS notification and printed receipt
                             functionality.</p>
-                        <a href="#portfolio" class="details-btn"><i class="far fa-arrow-right"></i></a>
+                        <a href="#portfolio" class="details-btn" aria-label="View St. Lawrence Water Works Billing System details"><i class="far fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center pb-25">
                 <div class="col-lg-6 order-lg-2">
                     <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="assets/images/projects/ACLC.png" alt="Project">
+                        <img src="assets/images/projects/ACLC.webp" alt="Project" loading="lazy">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 ms-auto">
@@ -720,14 +805,14 @@
                         <h2><a href="#portfolio">ACLC College of Sorsogon School Website with AI-Integrated CMS</a></h2>
                         <p>Created an AI-integrated Content Management System for ACLC College of Sorsogon, enhancing
                             their digital infrastructure.</p>
-                        <a href="#portfolio" class="details-btn"><i class="far fa-arrow-right"></i></a>
+                        <a href="#portfolio" class="details-btn" aria-label="View ACLC College AI-Integrated CMS project details"><i class="far fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center pb-25">
                 <div class="col-lg-6">
                     <div class="project-image wow fadeInLeft delay-0-2s">
-                        <img src="assets/images/projects/BGI.png" alt="Project">
+                        <img src="assets/images/projects/BGI.webp" alt="Project" loading="lazy">
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 order-lg-2">
@@ -736,7 +821,7 @@
                         <h2><a href="#portfolio">BGI Electrical Store Management System</a></h2>
                         <p>Developed an information management system with integrated point-of-sale (POS) functionality
                             for BGI Electrical Store.</p>
-                        <a href="#portfolio" class="details-btn"><i class="far fa-arrow-right"></i></a>
+                        <a href="#portfolio" class="details-btn" aria-label="View BGI Electrical Store Management System details"><i class="far fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -768,8 +853,8 @@
                                 <p>Hear what my esteemed clients have to say about my services.</p>
                             </div>
                             <div class="slider-arrows">
-                                <button class="testimonial-prev"><i class="fal fa-arrow-left"></i></button>
-                                <button class="testimonial-next"><i class="fal fa-arrow-right"></i></button>
+                                <button class="testimonial-prev" aria-label="Previous testimonial"><i class="fal fa-arrow-left" aria-hidden="true"></i></button>
+                                <button class="testimonial-next" aria-label="Next testimonial"><i class="fal fa-arrow-right" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -777,7 +862,7 @@
                         <div class="testimonials-wrap">
                             <div class="testimonial-item wow fadeInUp delay-0-3s">
                                 <div class="author">
-                                    <img src="assets/images/testimonials/pcistesti.png" alt="Cherie May Galido">
+                                    <img src="assets/images/testimonials/pcistesti.webp" alt="Cherie May Galido" loading="lazy">
                                 </div>
                                 <div class="text">The work done for PCIS has been exceptional. The attention to detail
                                     and innovative solutions provided have greatly enhanced our digital presence and
@@ -789,7 +874,7 @@
                             </div>
                             <div class="testimonial-item wow fadeInUp delay-0-4s">
                                 <div class="author">
-                                    <img src="assets/images/testimonials/engr.png" alt="Gerardo Dela Cruz">
+                                    <img src="assets/images/testimonials/engr.webp" alt="Gerardo Dela Cruz" loading="lazy">
                                 </div>
                                 <div class="text">Mr.Nikko's expertise and professionalism in developing our website at
                                     M7 IT Solutions have been outstanding. His work has significantly improved our
@@ -801,7 +886,7 @@
                             </div>
                             <div class="testimonial-item wow fadeInUp delay-0-5s">
                                 <div class="author">
-                                    <img src="assets/images/testimonials/bgitest.png" alt="BGI Owner">
+                                    <img src="assets/images/testimonials/bgitest.webp" alt="BGI Owner" loading="lazy">
                                 </div>
                                 <div class="text">The information management system with integrated POS functionality
                                     developed for BGI Electrical Store has revolutionized our operations. It's
@@ -1022,19 +1107,19 @@
             <div class="client-logo-wrap">
              
                 <a class="client-logo-item wow fadeInUp delay-0-3s" href="https://m7techsolutions.com/">
-                    <img src="assets/images/projects/M7 TECH LOGO-02.png" alt="M7 IT Solutions Company">
+                    <img src="assets/images/projects/M7 TECH LOGO-02.webp" alt="M7 IT Solutions Company" loading="lazy">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-4s" href="#portfolio">
-                    <img src="assets/images/projects/SLWI.png" alt="St. Lawrence Water Works Incorporation">
+                    <img src="assets/images/projects/SLWI.webp" alt="St. Lawrence Water Works Incorporation" loading="lazy">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-2s" href="https://pcis.edu.ph">
-                    <img src="assets/images/projects/LOGO-with white shadow.png" alt="Philippine Cambridge International School">
+                    <img src="assets/images/projects/LOGO-with white shadow.webp" alt="Philippine Cambridge International School" loading="lazy">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-5s" href="#portfolio">
-                    <img src="assets/images/projects/ACLC.png" alt="ACLC College">
+                    <img src="assets/images/projects/ACLC.webp" alt="ACLC College" loading="lazy">
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-6s" href="#portfolio">
-                    <img src="assets/images/projects/BGI.png" alt="BGI">
+                    <img src="assets/images/projects/BGI.webp" alt="BGI" loading="lazy">
                 </a>
             </div>
         </div>
@@ -1109,29 +1194,29 @@
                     </div>
                     <div class="col-lg-6 text-lg-end">
                         <ul class="footer-bottom-nav">
-                            <li><a href="https://www.linkedin.com/in/nikko-calumpiano-94a378250/" target="_blank" style="transition: color 0.3s;"><i class="fab fa-linkedin" onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color=''"></i></a></li>
-                            <li><a href="https://github.com/nixthephdev" target="_blank" style="transition: color 0.3s;"><i class="fab fa-github" onmouseover="this.style.color='#6e5494'" onmouseout="this.style.color=''"></i></a></li>
-                            <li><a href="https://m.me/neekoxyz" target="_blank" style="transition: color 0.3s;"><i
-                                            class="fab fa-facebook-messenger" onmouseover="this.style.color='#00B2FF'"
+                            <li><a href="https://www.linkedin.com/in/nikko-calumpiano-94a378250/" target="_blank" aria-label="LinkedIn profile" style="transition: color 0.3s;"><i class="fab fa-linkedin" aria-hidden="true" onmouseover="this.style.color='#0A66C2'" onmouseout="this.style.color=''"></i></a></li>
+                            <li><a href="https://github.com/nixthephdev" target="_blank" aria-label="GitHub profile" style="transition: color 0.3s;"><i class="fab fa-github" aria-hidden="true" onmouseover="this.style.color='#6e5494'" onmouseout="this.style.color=''"></i></a></li>
+                            <li><a href="https://m.me/neekoxyz" target="_blank" aria-label="Facebook Messenger" style="transition: color 0.3s;"><i
+                                            class="fab fa-facebook-messenger" aria-hidden="true" onmouseover="this.style.color='#00B2FF'"
                                             onmouseout="this.style.color=''"></i></a></li>
-                            <li><a href="https://www.instagram.com/neekoxyz" target="_blank"
-                                    style="transition: color 0.3s;"><i class="fab fa-instagram"
+                            <li><a href="https://www.instagram.com/neekoxyz" target="_blank" aria-label="Instagram profile"
+                                    style="transition: color 0.3s;"><i class="fab fa-instagram" aria-hidden="true"
                                             onmouseover="this.style.color='#E1306C'"
                                             onmouseout="this.style.color=''"></i></a></li>
-                            <li><a href="https://web.telegram.org/k/#@Nixlopez" target="_blank"
-                                    style="transition: color 0.3s;"><i class="fab fa-telegram"
+                            <li><a href="https://web.telegram.org/k/#@Nixlopez" target="_blank" aria-label="Telegram"
+                                    style="transition: color 0.3s;"><i class="fab fa-telegram" aria-hidden="true"
                                             onmouseover="this.style.color='#0088cc'"
                                             onmouseout="this.style.color=''"></i></a></li>
-                            <li><a href="viber://chat?number=%2B639319914266" target="_blank"
-                                    style="transition: color 0.3s;"><i class="fab fa-viber"
+                            <li><a href="viber://chat?number=%2B639319914266" target="_blank" aria-label="Viber"
+                                    style="transition: color 0.3s;"><i class="fab fa-viber" aria-hidden="true"
                                             onmouseover="this.style.color='#665CAC'"
                                             onmouseout="this.style.color=''"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- Scroll Top Button -->
-                <button class="scroll-top scroll-to-target" data-target="html"><span
-                            class="fas fa-angle-double-up"></span></button>
+                <button class="scroll-top scroll-to-target" data-target="html" aria-label="Scroll to top"><span
+                            class="fas fa-angle-double-up" aria-hidden="true"></span></button>
             </div>
             <div class="bg-lines">
                 <span></span><span></span>
@@ -1159,12 +1244,6 @@
     <script src="assets/js/appear.min.js"></script>
     <!-- Slick -->
     <script src="assets/js/slick.min.js"></script>
-    <!-- Nice Select -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!-- Image Loader -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <!-- Isotope -->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
     <!--  WOW Animation -->
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->

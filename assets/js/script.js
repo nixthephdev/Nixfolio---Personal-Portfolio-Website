@@ -208,7 +208,9 @@
         
         
         // ## Nice Select
-        $('select').niceSelect();
+        if (typeof $.fn.niceSelect !== 'undefined') {
+            $('select').niceSelect();
+        }
         
         
         // ## WOW Animation
@@ -309,7 +311,6 @@
     (function() {
         const canvas = document.getElementById('snow-canvas');
         if (!canvas) {
-            console.error('Canvas element not found!');
             return;
         }
         const ctx = canvas.getContext('2d');
