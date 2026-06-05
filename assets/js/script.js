@@ -272,15 +272,20 @@
        When document is loaded, do
        ========================================================================== */
 
+    // Preloader: hide on DOMContentLoaded (not window.load) so FCP is not blocked by image downloads.
+    // Hard cap at 800ms so a slow asset can never stall it.
+    (function () {
+        function hidePreloader() {
+            var $pre = $('.preloader');
+            if ($pre.length) $pre.stop(true).fadeOut(400);
+        }
+        $(document).ready(hidePreloader);
+        setTimeout(hidePreloader, 800);
+    }());
+
     $(window).on('load', function () {
 
-        // ## Preloader
-        function handlePreloader() {
-            if ($('.preloader').length) {
-                $('.preloader').delay(200).fadeOut(500);
-            }
-        }
-        handlePreloader();
+        // ## Project Filtering
         
         
         // ## Project Filtering
