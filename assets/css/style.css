@@ -271,6 +271,13 @@ html {
   scroll-behavior: unset !important;
 }
 
+/* Stop sideways drag on mobile; clip (not hidden) keeps sticky/fixed elements working */
+html,
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 /*******************************************************/
 /*****************  ## Common Classes *****************/
 /*******************************************************/
